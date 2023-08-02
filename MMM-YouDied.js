@@ -1,26 +1,26 @@
 
 // MMM-YouDied.js:
 
+var youDied = document.createElement("img");
+youDied.src = './modules/MMM-YouDied/youdied.png';
+
 Module.register("MMM-YouDied", {
+
+    
+
     //default module config
     defaults: {
 
 
     }
 
-    //overide dom generator
-    getDom: function (){
+    
+   // Override dom generator.
+  getDom: function () {
+    var wrapper = document.createElement("div");
+    wrapper.innerHTML = youDied;
+    return wrapper;
 
-            var imgage = document.createElement('div');
-            wrapper.className
-
-
-        
     }
-
-
-
-
-
 
 });
